@@ -11,20 +11,44 @@
     <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-    <!-- Navigasi -->
+    <!-- Site Navigation -->
     <nav class="teal lighten-1" role="navigation">
         <div class="nav-wrapper container">
-        <a href="#" class="brand-logo" id="logo-container">My App</a>
+        <a href="#" class="brand-logo" id="logo-container">Movie Oracle</a>
         <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
         
         <ul class="topnav right hide-on-med-and-down"></ul>
         <ul class="sidenav" id="nav-mobile"></ul>
         </div>
     </nav>
-    <!-- Akhir Navigasi -->
-    <div class="container" id="body-content"></div>
+    <!-- End Site Navigation -->
+
+    <!-- Site Content -->
+    <main class="container" id="body-content">
+        <div class="preloader-wrapper small active">
+            <div class="spinner-layer spinner-green-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                    <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End of site content -->
+
+    <footer class="site-footer blue-grey darken-2">
+        <div class="footer-copyright container">
+            <p class="grey-text text-lighten-4">&copy; 2019 Tiki Taka <a class="right grey-text text-lighten-4" href="#!">Made with ❤ Grafis Nuresa</a></p>
+        </div>
+    </footer>
+
     <script src="js/materialize.min.js"></script>
     <script src="js/nav.js"></script>
+    
+
     <!-- <script>
         // REGISTER SERVICE WORKER
         if ("serviceWorker" in navigator) {

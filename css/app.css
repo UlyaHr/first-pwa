@@ -1,29 +1,39 @@
 body {
     background-color: blueviolet;
 }
+
+main {
+    min-height: 100vh;
+}
+
 #navbar {
     background-color: blueviolet;
 }
 .sidenav-trigger {
     font-size: 28px;
 }
-
-ul:not(.browser-default) > li {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-}
 .logo-sidenav {
-    width: 100%;
-    margin-bottom: 20px;
+    min-height: 100px;
+}
+.logo-sidenav a{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo-sidenav img {
+    padding: 10px 0;
     max-height: 100px;
     width: 100%;
+    margin-left: auto;
+    margin-left: auto;
     -o-object-fit: contain;
     object-fit: contain;
-    -o-object-position: center;
-    object-position: center;
+    -o-object-position: center center;
+    object-position: center center;
+}
+.sidenav li>a {
+    font-size: 20px;
+    text-align: center;
+    color: navy;
 }
