@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <title>My First PWA</title>
-  <meta name="description" content="My first PWA"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/materialize.min.css">
+    <meta charset="UTF-8"/>
+    <title>My First PWA</title>
+    <meta name="description" content="My first PWA"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/materialize.min.css">
 </head>
 <body>
-  <!-- Navigasi -->
-  <nav class="teal lighten-1" role="navigation">
-    <div class="nav-wrapper container">
-      <a href="#" class="brand-logo" id="logo-container">My App</a>
-      <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
-      
-      <ul class="topnav right hide-on-med-and-down"></ul>
-      <ul class="sidenav" id="nav-mobile"></ul>
-    </div>
-  </nav>
-  <!-- Akhir Navigasi -->
-  <div class="container" id="body-content"></div>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/nav.js"></script>
-  <script>
-    // REGISTER SERVICE WORKER
-    if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function() {
-            navigator.serviceWorker
-            .register("/service-worker.js")
-            .then(function() {
-                console.log("Pendaftaran ServiceWorker berhasil");
-            })
-            .catch(function() {
-                console.log("Pendaftaran ServiceWorker gagal");
+    <!-- Navigasi -->
+    <nav class="teal lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+        <a href="#" class="brand-logo" id="logo-container">My App</a>
+        <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+        
+        <ul class="topnav right hide-on-med-and-down"></ul>
+        <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+    <div class="container" id="body-content"></div>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script>
+        // REGISTER SERVICE WORKER
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function() {
+                navigator.serviceWorker
+                .register("/service-worker.js")
+                .then(function() {
+                    console.log("Pendaftaran ServiceWorker berhasil");
+                })
+                .catch(function() {
+                    console.log("Pendaftaran ServiceWorker gagal");
+                });
             });
-        });
-    } else {
-      console.log("ServiceWorker belum didukung browser ini.");
-    }
-  </script>
+        } else {
+        console.log("ServiceWorker belum didukung browser ini.");
+        }
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.15.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.15.3/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
   
 </body>
 </html>
