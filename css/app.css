@@ -1,0 +1,21 @@
+body {
+    background-color: blueviolet;
+}
+#navbar {
+    background-color: blueviolet;
+}
+.sidenav-trigger {
+    font-size: 30px;
+}
+
+ul:not(.browser-default) > li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.logo-sidenav {
+    width: 100%;
+    margin-bottom: 20px;
+}
