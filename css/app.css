@@ -9,10 +9,11 @@ main {
 #navbar {
     background-color: blueviolet;
 }
-.sidenav-trigger {
-    font-size: 28px;
+.material-icons{
+    line-height: unset !important;
 }
 .logo-sidenav {
+    margin: 20px auto;
     min-height: 100px;
 }
 .logo-sidenav a{
