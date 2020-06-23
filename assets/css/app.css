@@ -183,6 +183,10 @@ a {
     margin-bottom: unset;
 }
 
+.movie-upcoming {
+    padding-top: 20px;
+}
+
 .contact-me {
     background-color: #eee;
     margin: 30px auto;
