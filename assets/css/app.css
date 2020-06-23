@@ -1,12 +1,22 @@
-/* RESET CSS MATERIALIZE */
-/* fallback */
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(/assets/font/material-icons.woff2) format('woff2');
+body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: "Exo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 16px;
+    color: #525f65;
 }
-  
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -25,25 +35,6 @@
 .preloader-wrapper.active {
     display: block;
     margin: 50px auto;
-}
-
-body {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    min-height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -moz-box-orient: vertical;
-    -moz-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    font-family: "Overpass",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-    font-size: 16px;
-    color: #525f65;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -69,6 +60,10 @@ a {
     height: 100%;
     font-size: 0;
     font-weight: 700;
+}
+
+.brand-logo img {
+    max-height: 100%;
 }
 
 nav .sidenav-trigger {
@@ -103,8 +98,9 @@ nav .sidenav-trigger {
 
 .sidenav li>a {
     font-size: 20px;
+    font-weight: 700;
     text-align: center;
-    color: navy;
+    color: #283593;
 }
 
 .pages {
@@ -163,12 +159,21 @@ nav .sidenav-trigger {
     position: relative;
 }
 
+.banner span {
+    font-weight: 300;
+}
+
 .banner p {
-    color: #dce6ea;
+    font-weight: 400;
+    color: #fff;
 }
 
 .movie-recommend {
     padding-bottom: 20px;
+}
+
+.movie-recommend .card-title {
+    font-weight: 400;
 }
 
 .title-recommend {
@@ -186,6 +191,7 @@ nav .sidenav-trigger {
 }
 
 .title-recommend h5 {
+    font-weight: 700;
     margin-bottom: unset;
 }
 
@@ -225,12 +231,13 @@ nav .sidenav-trigger {
 
 .about-me .card-image h5{
     font-size: 26px;
-    font-weight: 500;
+    font-weight: 700;
     color: #fff;
 }
 
 .about-me .card-image p{
     font-size: 20px;
+    font-weight: 300;
     color: #fff;
     margin: 0;
 }
