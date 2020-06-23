@@ -183,6 +183,14 @@ a {
     margin-bottom: unset;
 }
 
+.contact-me {
+    background-color: #eee;
+    margin: 30px auto;
+    position: relative;
+    z-index: 2;
+    border-radius: 3px;
+}
+
 
 .site-footer .footer-copyright {
     padding: 20px 0;
@@ -195,4 +203,10 @@ a {
 
 .site-footer .footer-copyright span {
     color: salmon;
+}
+
+@media (min-width: 365px){
+    .contact-me {
+        padding: 35px;
+    }
 }
