@@ -8,12 +8,19 @@ var urlsToCache = [
   "./pages/about.html",
   "./pages/contact.html",
   "./pages/upcoming.html",
-  "./css/materialize.min.css",
-  "./css/app.css",
-  "./css/font.css",
-  "./js/materialize.min.js",
-  "./js/nav.js",
-  "./icon.png"
+  "./assets/css/materialize.min.css",
+  "./assets/css/app.css",
+  "./assets/css/font.css",
+  "./assets/js/materialize.min.js",
+  "./assets/js/nav.js",
+  "./assets/icon/icon-48.png",
+  "./assets/icon/icon-96.png",
+  "./assets/icon/icon-128.png",
+  "./assets/icon/icon-144.png",
+  "./assets/icon/icon-192.png",
+  "./assets/icon/icon-256.png",
+  "./assets/icon/icon-384.png",
+  "./assets/icon/icon-512.png"
 ];
  
 self.addEventListener("install", function(event) {
