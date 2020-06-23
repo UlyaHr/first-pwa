@@ -2,29 +2,29 @@
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(./assets/font/material-icons.woff2) format('woff2');
+    src: url('../font/material-icons.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Exo';
     font-weight: 900;
-    src: url('./assets/font/Exo-BoldItalic.ttf');
+    src: url('../font/Exo-BoldItalic.ttf');
 }
 
 @font-face {
     font-family: 'Exo';
     font-weight: 700;
-    src: url('./assets/font/Exo-Bold.ttf');
+    src: url('../font/Exo-Bold.ttf');
 }
 
 @font-face {
     font-family: 'Exo';
     font-weight: 400;
-    src: url('./assets/font/Exo-Regular.ttf');
+    src: url('../font/Exo-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Exo';
     font-weight: 300;
-    src: url('./assets/font/Exo-LightItalic.ttf');
+    src: url('../font/Exo-LightItalic.ttf');
 }
