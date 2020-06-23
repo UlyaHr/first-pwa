@@ -195,6 +195,77 @@ a {
     border-radius: 3px;
 }
 
+.about-me .card-image {
+    width: 100%;
+    height: auto;
+    background: -moz-linear-gradient(130deg, rgba(69, 90, 100, .6) 35%, rgba(249, 168, 37, 0.5) 90%);
+    background: -webkit-linear-gradient(130deg, rgba(69, 90, 100, .6) 35%, rgba(249, 168, 37, 0.5) 90%);
+    background: linear-gradient(130deg, rgba(69, 90, 100, .6) 10%, rgba(249, 168, 37, 0.5) 90%);
+}
+
+.about-me .card-image img{
+    padding: 50px;
+    width: 100%;
+    height: calc(250px + 5vw);
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card-content table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    position: relative;
+}
+
+.card-content table thead{
+    border: 0;
+    border-right: 1px solid rgba(0,0,0,.12);
+    display: block;
+    float: left;
+}
+
+.card-content table thead tr{
+    display: block;
+    padding: 0 10px 0 0;
+}
+
+.card-content table tr{
+    border: 0;
+    padding: 0 10px;
+}
+
+.card-content table th,
+.card-content table td{
+    margin: 0;
+    vertical-align: top;
+}
+
+.card-content table th {
+    display: block;
+    text-align: right;
+}
+
+.card-content table tbody{
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.card-content table tbody tr{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-content table td{
+    display: block;
+    min-height: 1.25rem;
+    text-align: left;
+}
 
 .site-footer .footer-copyright {
     padding: 20px 0;
