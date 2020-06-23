@@ -1,4 +1,4 @@
-const CACHE_NAME = "firstpwa-01";
+const CACHE_NAME = "oracle-01";
 var urlsToCache = [
   "./",
   "./nav.html",
@@ -7,8 +7,10 @@ var urlsToCache = [
   "./pages/home.html",
   "./pages/about.html",
   "./pages/contact.html",
+  "./pages/upcoming.html",
   "./css/materialize.min.css",
   "./css/app.css",
+  "./css/font.css",
   "./js/materialize.min.js",
   "./js/nav.js",
   "./icon.png"
