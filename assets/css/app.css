@@ -71,6 +71,12 @@ a {
     font-weight: 700;
 }
 
+nav .sidenav-trigger {
+    height: 100%;
+    margin-left: 0;
+    font-size: 40px;
+}
+
 .logo-sidenav {
     margin: 20px auto;
     min-height: 100px;
