@@ -46,12 +46,6 @@ body {
     color: #525f65;
 }
 
-
-
-#navbar {
-    background-color: blueviolet;
-}
-
 h1, h2, h3, h4, h5, h6, p {
     word-break: break-word;
     margin-top: 0;
@@ -63,6 +57,18 @@ h1, h2, h3 {
 
 a {
     color: #f9a825;
+}
+
+.brand-logo {
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    font-size: 0;
+    font-weight: 700;
 }
 
 .logo-sidenav {
@@ -159,10 +165,24 @@ a {
     padding-bottom: 20px;
 }
 
-.movie-recommend h5{
+.title-recommend {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    vertical-align: middle;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.title-recommend i {
+    margin-right: 8px;
+    
+}
+
+.title-recommend h5 {
+    margin-bottom: unset;
+}
+
 
 .site-footer .footer-copyright {
     padding: 20px 0;

@@ -1,2 +1,39 @@
-<h2>Hubungi Saya</h2>
-<p>Hubungi saya melalui email ulyahr@gmail.com</p>
+<main class="site-content indigo lighten-5" id="site-content">
+    <div class="banner indigo darken-3">
+        <div class="title container">
+            <h1>Contact Me</h1>
+            <p>If you have any questions or suggestion</p>
+        </div>
+    </div>
+    <div class="container contact-me z-depth-2">
+        <div class="row">
+            <form action="https://formspree.io/mjvaozzo" class="col s12 m6" method="POST">
+                <div class="input-field col s12">
+                    <input id="title" class="validate" type="text" name="_subject">
+                    <label for="title">Subject</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="firstname" class="validate" type="text">
+                    <label for="firstname" data-error="wrong" data-success="right">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="lastname" class="validate" type="text">
+                    <label for="lastname" data-error="wrong" data-success="right">Last Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="email" class="validate" type="email" name="_replyto">
+                    <label for="email" data-error="wrong" data-success="right">Your Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea class="materialize-textarea" name="message" id="textarea" cols="8" ></textarea>
+                    <label for="textarea">Your Message</label>
+                </div>
+                <div class="input-field col s12">
+                    <button class="btn waves-effect waves-light btn-large indigo darken-3" type="submit" name="action">Send</button>
+                </div>
+            </form>
+            
+        </div>
+        
+    </div>
+</main>
