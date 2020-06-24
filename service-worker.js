@@ -1,4 +1,4 @@
-const CACHE_NAME = "cache-v11";
+const CACHE_NAME = "cache-v1";
 var urlsToCache = [
   "./",
   "./nav.html",
