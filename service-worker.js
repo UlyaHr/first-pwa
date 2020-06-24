@@ -20,7 +20,23 @@ var urlsToCache = [
   "./assets/icon/icon-192.png",
   "./assets/icon/icon-256.png",
   "./assets/icon/icon-384.png",
-  "./assets/icon/icon-512.png"
+  "./assets/icon/icon-512.png",
+  "./assets/img/icon-color.svg",
+  "./assets/img/icon-outline.svg",
+  "./assets/img/black-widow.jpg",
+  "./assets/img/jojo-rabbit.jpg",
+  "./assets/img/kingsman.jpg",
+  "./assets/img/nttd.jpg",
+  "./assets/img/pp.jpg",
+  "./assets/img/tenet.jpg",
+  "./assets/img/the-dark-knight.jpg",
+  "./assets/img/the-prestige.jpg",
+  "./assets/img/watchmen.jpg",
+  "./assets/font/Exo-Bold.ttf",
+  "./assets/font/Exo-BoldItalic.ttf",
+  "./assets/font/Exo-LightItalic.ttf",
+  "./assets/font/Exo-Regular.ttf",
+  "./assets/font/material-icons.woff2"
 ];
 
 self.addEventListener("install", function(event) {
