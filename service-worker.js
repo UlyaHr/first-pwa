@@ -1,4 +1,4 @@
-const CACHE_NAME = "oracle-2";
+const CACHE_NAME = "oracle-1";
 var urlsToCache = [
   "./",
   "./nav.html",
@@ -53,12 +53,12 @@ self.addEventListener("fetch", function(event) {
             .match(event.request, { cacheName: CACHE_NAME })
             .then(function(response) {
             if (response) {
-                console.log("ServiceWorker: Gunakan aset dari cache: ", response.url);
+                console.log("ServiceWorker using asset from cache: ", response.url);
                 return response;
             }
     
             console.log(
-                "ServiceWorker: Memuat aset dari server: ",
+                "ServiceWorker loading asset from server: ",
                 event.request.url
             );
             return fetch(event.request);
@@ -72,7 +72,7 @@ self.addEventListener("activate", function(event) {
             return Promise.all(
                 cacheNames.map(function(cacheName) {
                     if (cacheName != CACHE_NAME) {
-                    console.log("ServiceWorker: cache " + cacheName + " dihapus");
+                    console.log("ServiceWorker deleting cache: ", cacheName);
                     return caches.delete(cacheName);
                     }
                 })
