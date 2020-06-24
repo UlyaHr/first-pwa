@@ -1,4 +1,4 @@
-const CACHE_NAME = "cache-v1";
+const CACHE_NAME = "cache-v2";
 var urlsToCache = [
   "./",
   "./nav.html",
@@ -25,7 +25,18 @@ var urlsToCache = [
   "./assets/font/Exo-BoldItalic.ttf",
   "./assets/font/Exo-LightItalic.ttf",
   "./assets/font/Exo-Regular.ttf",
-  "./assets/font/material-icons.woff2"
+  "./assets/font/material-icons.woff2",
+  "./assets/img/black-widow.jpg",
+  "./assets/img/icon-color.svg",
+  "./assets/img/icon-outline.svg",
+  "./assets/img/jojo-rabbit.jpg",
+  "./assets/img/kingsman.jpg",
+  "./assets/img/nttd.jpg",
+  "./assets/img/pp.jpg",
+  "./assets/img/tenet.jpg",
+  "./assets/img/the-dark-knght.jpg",
+  "./assets/img/the-prestige.jpg",
+  "./assets/img/watchmen.jpg"
 ];
 
 self.addEventListener("install", function(event) {
