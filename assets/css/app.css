@@ -64,6 +64,7 @@ a {
 
 .brand-logo img {
     max-height: 100%;
+    padding: 5px 0;
 }
 
 nav .sidenav-trigger {
@@ -310,8 +311,25 @@ nav .sidenav-trigger {
     color: salmon;
 }
 
+@media (max-width: 390px){
+    .banner {
+        background-position: 160% 25%;
+        background-size: auto 300px, cover;
+    }
+    .site-footer .footer-copyright p {
+        font-size: 14px;
+    }
+}
+
 @media (min-width: 365px){
     .contact-me {
         padding: 35px;
     }
 }
+
+@media (max-width: 320px){
+    .site-footer .footer-copyright p {
+        font-size: 12px;
+    }
+}
+
