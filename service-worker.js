@@ -20,7 +20,12 @@ var urlsToCache = [
   "./assets/icon/icon-192.png",
   "./assets/icon/icon-256.png",
   "./assets/icon/icon-384.png",
-  "./assets/icon/icon-512.png"
+  "./assets/icon/icon-512.png",
+  "./assets/font/Exo-Bold.ttf",
+  "./assets/font/Exo-BoldItalic.ttf",
+  "./assets/font/Exo-LightItalic.ttf",
+  "./assets/font/Exo-Regular.ttf",
+  "./assets/font/material-icons.woff2"
 ];
 
 self.addEventListener("install", function(event) {
