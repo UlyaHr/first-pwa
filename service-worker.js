@@ -1,4 +1,4 @@
-const CACHE_NAME = "oracle-1";
+const CACHE_NAME = "oracle-0";
 var urlsToCache = [
   "./",
   "./nav.html",
