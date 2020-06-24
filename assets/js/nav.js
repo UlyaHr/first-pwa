@@ -11,19 +11,19 @@ document.addEventListener("DOMContentLoaded", function() {
             if (this.readyState == 4) {
                 if (this.status != 200) return;
        
-                // Muat daftar tautan menu
+                // Load menu link
                 document.querySelectorAll(".topnav, .sidenav").forEach(function(elm) {
                     elm.innerHTML = xhttp.responseText;
                 });
        
-                // Daftarkan event listener untuk setiap tautan menu
+                // Add event listener for each menu link
                 document.querySelectorAll(".sidenav a, .topnav a").forEach(function(elm) {
                     elm.addEventListener("click", function(event) {
-                        // Tutup sidenav
+                        // Close sidenav
                         var sidenav = document.querySelector(".sidenav");
                         M.Sidenav.getInstance(sidenav).close();
             
-                        // Muat konten halaman yang dipanggil
+                        // Load choosen page
                         page = event.target.getAttribute("href").substr(1);
                         loadPage(page);
                     });

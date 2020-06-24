@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#00897B"/>
-    <title>My First PWA</title>
-    <meta name="description" content="My first PWA"/>
+    <meta name="theme-color" content="#FF6D00"/>
+    <title>Movie Oracle</title>
+    <meta name="description" content="Curated Movie Recommend"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load Page Style -->
     <link rel="stylesheet" href="assets/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/font.css">
-
 </head>
+
 <body>
     <!-- Site Navigation -->
     <div class="navbar-fixed">
@@ -31,6 +32,7 @@
 
     <!-- Site Content -->
     <main class="pages indigo lighten-4" id="body-content">
+        <!-- Pre-loader -->
         <div class="preloader-wrapper small active">
             <div class="spinner-layer spinner-green-only">
                 <div class="circle-clipper left">
@@ -45,16 +47,17 @@
     </main>
     <!-- End of site content -->
 
+    <!-- Site Footer -->
     <footer class="site-footer indigo darken-4">
         <div class="footer-copyright container">
             <p class="indigo-text text-lighten-4">Movie Oracle &copy; 2020<a class="right indigo-text text-lighten-4" href="#!">Made with <span>❤</span> by UlyaHr</a></p>
         </div>
     </footer>
+    <!-- Site Footer -->
 
+    <!-- Load Site Script -->
     <script src="assets/js/materialize.min.js"></script>
     <script src="assets/js/nav.js"></script>
-    
-
     <script>
         // REGISTER SERVICE WORKER
         if ("serviceWorker" in navigator) {
@@ -62,14 +65,14 @@
                 navigator.serviceWorker
                 .register("./service-worker.js")
                 .then(function() {
-                    console.log("Pendaftaran ServiceWorker berhasil");
+                    console.log("ServiceWorker registration success");
                 })
                 .catch(function() {
-                    console.log("Pendaftaran ServiceWorker gagal");
+                    console.log("ServiceWorker registration failed");
                 });
             });
         } else {
-        console.log("ServiceWorker belum didukung browser ini.");
+        console.log("ServiceWorker not supported in this browser.");
         }
     </script>
   
