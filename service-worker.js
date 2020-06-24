@@ -1,4 +1,4 @@
-const CACHE_NAME = "oracle-0";
+const CACHE_NAME = "cache-v3";
 var urlsToCache = [
   "./",
   "./nav.html",
@@ -38,7 +38,7 @@ var urlsToCache = [
   "./assets/font/Exo-Regular.ttf",
   "./assets/font/material-icons.woff2"
 ];
- 
+
 self.addEventListener("install", function(event) {
     event.waitUntil(
         caches.open(CACHE_NAME).then(function(cache) {
@@ -47,33 +47,35 @@ self.addEventListener("install", function(event) {
     );
 });
 
+// Using asset from cache if its exist, if not then using fetch request
 self.addEventListener("fetch", function(event) {
     event.respondWith(
         caches
-            .match(event.request, { cacheName: CACHE_NAME })
-            .then(function(response) {
+        .match(event.request, { cacheName: CACHE_NAME })
+        .then(function(response) {
             if (response) {
                 console.log("ServiceWorker using asset from cache: ", response.url);
                 return response;
             }
-    
+
             console.log(
-                "ServiceWorker loading asset from server: ",
+                "ServiceWorker fetch asset from server: ",
                 event.request.url
             );
             return fetch(event.request);
-            })
+        })
     );
 });
 
+//Deleting Old Cache
 self.addEventListener("activate", function(event) {
     event.waitUntil(
         caches.keys().then(function(cacheNames) {
             return Promise.all(
                 cacheNames.map(function(cacheName) {
                     if (cacheName != CACHE_NAME) {
-                    console.log("ServiceWorker deleting cache: ", cacheName);
-                    return caches.delete(cacheName);
+                        console.log("ServiceWorker: cache " + cacheName + " deleted!");
+                        return caches.delete(cacheName);
                     }
                 })
             );
