@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     loadNav();
    
     function loadNav() {
-        var xhttp = new XMLHttpRequest();
+        const xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4) {
                 if (this.status != 200) return;
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Load page content
     var page = window.location.hash.substr(1);
-    if (page == "") page = "home";
+    if (page === "") page = "home";
     loadPage(page);
     
     function loadPage(page) {
@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (this.status == 200) {
                     content.innerHTML = xhttp.responseText;
             } else if (this.status == 404) {
-                content.innerHTML = "<p>Halaman tidak ditemukan.</p>";
+                content.innerHTML = "<p>Page not found.</p>";
             } else {
-                content.innerHTML = "<p>Ups.. halaman tidak dapat diakses.</p>";
+                content.innerHTML = "<p>Oops.. page cannot be accessed.</p>";
             }
         }
     };
